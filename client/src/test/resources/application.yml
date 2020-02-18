@@ -5,5 +5,10 @@ spring:
 
 client:
   ssl:
-    two-way-authentication-enabled: false
     one-way-authentication-enabled: false
+    two-way-authentication-enabled: true
+    key-store: identity.jks
+    key-password: secret
+    key-store-password: secret
+    trust-store: truststore.jks
+    trust-store-password: secret
